@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Farm Fresh Market</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== TOP BAR ===== -->
+<div class="top-bar">
+  <div class="logo">🌾 Farm Fresh Market</div>
+
+  <div class="profile-icon" onclick="goToProfile()">
+    👤
+  </div>
+</div>
+
+
+
+<a href="farmer.html">Farmer Register</a> |
+<a href="product.html">Add Product</a>
+<a href="customer.html">customer Register</a>
+<a href="profile.html">profile</a>
+
+<!-- ===== SEARCH BAR ===== -->
+<div class="search-box">
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="🔍 Search products..."
+    onkeyup="searchProducts()"
+  >
+</div>
+<h2>Available Products</h2>
+
+<div id="products"></div>
+
+<script src="script.js"></script>
+<script>
+loadProducts();
+</script>
+
+</body>
+</html>
